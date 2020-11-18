@@ -4,3 +4,4 @@
 /.docker/rabbitmq/logs/*
 /.docker/rabbitmq/data/*
 /.docker/database/mysql/*
+/.docker/elasticsearch/*

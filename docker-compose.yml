@@ -42,6 +42,14 @@ services:
       - ./src:/var/www/magento/
     links:
       - magento-php
+  magento-elasticsearch:
+    image: 'docker.io/bitnami/elasticsearch:7-debian-10'
+    container_name: elasticsearch
+    ports:
+      - '9200:9200'
+      - '9300:9300'
+    volumes:
+      - ./.docker/elasticsearch:/bitnami/elasticsearch/data
   magento-rabbitmq:
    image: rabbitmq:management-alpine
    container_name: rabbitmq
