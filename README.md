@@ -1,4 +1,9 @@
 # magento-docker
+Magento2 docker compose
+nginx
+php7.3-fpm
+mysql 5.7
+rabbitmq
 
 Docker-compose config for install development environment of magento2
 
